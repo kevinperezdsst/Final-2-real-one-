@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>"Locations"</title>
+    <link rel="stylesheet" href="final2.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+      #map{
+        height:400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <body class="body">
+      <nav>
+          <ul>
+              <li><a href="final2.html">"Home"</a></li>
+              <li>
+            <a href="hoodies.html">"Products" <span class="caret"></span></a>
+                  <div>
+                      <ul>
+                          <li><a href="hoodies.html">"Hoodies"</a></a></li>
+                          <li><a href="shirts.html">"Shirts"</a></li>
+                          <li><a href="accesories.html">"Accessoires"</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="about.html">"About"</a></li>
+              <li><a href="location.html">"Location"</a></li>
+          </ul>
+      </nav>
+    <main class="title">
+      <h1>"Off White Retail Locations"</h1>
+    </main>
+    <h1>"Off White"</h1>
+    <div id="map"></div>
+      <script>
+        function initMap() {
+          var options = {
+            zoom:2,
+            center: {lat:40.7218412,lng:-74.00125259999999}
+          }
+
+          var map = new google.maps.Map(document.getElementById('map'),options);
+
+          var marker = new google.maps.Marker({
+            position: {lat:40.7218412,lng:-74.00125259999999},
+            map:map
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat:48.8735916,lng:2.33213939999996},
+            map:map
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat:35.6636968,lng:139.71403850000002},
+            map:map
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat:51.49940549999999,lng:-0.1632343999999648},
+            map:map
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat:22.2801648,lng:114.15871770000001},
+            map:map
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat:-33.8704476,lng:151.20928779999997},
+            map:map
+          });
+        }
+      </script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLYr2R6fWONv822Vu41hRNwqhMBSbVFqg&callback=initMap">
+</script>
+    <main class="title">
+        <h1>"Loctions Around The World"</h1>
+    </main>
+  </body>
+</html>
